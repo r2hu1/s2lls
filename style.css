@@ -3238,3 +3238,13 @@ pre i.green {
 
 /* opt: do not copy */
 /*body{user-select:none;-moz-user-select:none;-ms-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-webkit-touch-callout:none} pre, code, kbd, i[rel=pre]{user-select:text;-moz-user-select:text;-ms-user-select:text;-khtml-user-select:text;-webkit-user-select:text;-webkit-touch-callout:text}*/
+@media (prefers-color-scheme: dark) {
+    --coreT-prim: #F8F9FA;
+    --coreT-dim: #D2D3D7;
+    --coreLink: #6001FF;
+    --coreBg: #202124;
+    --coreBg-dim: #2D3138;
+    --coreBg-gray: #161C24;
+    --coreBg-pop: ;
+    --coreBd-color: #35393f;
+}
