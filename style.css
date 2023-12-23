@@ -3023,8 +3023,14 @@ pre i.green {
         align-self: baseline
     }
 }
-
+.menuLabelSvg{
+    display:none;
+}
 @media screen and (max-width:640px) {
+
+    .menuLabelSvg{
+        display:block;
+    }
 
     /* var */
     .nB {
