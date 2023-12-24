@@ -17,16 +17,7 @@
     --h5: 1.6rem;
     --h6: 1.55rem;
 }
-@media (prefers-color-scheme: dark) {
-    --coreT-prim: #F8F9FA;
-    --coreT-dim: #D2D3D7;
-    --coreLink: #6001FF;
-    --coreBg: #202124;
-    --coreBg-dim: #2D3138;
-    --coreBg-gray: #161C24;
-    --coreBg-pop: ;
-    --coreBd-color: #35393f;
-}
+
 .nB {
     /* var: palette */
     --coreT-prim: #191919;
@@ -53,7 +44,7 @@
     --btnBg: #3740FF;
     --btnBd-line: 1px;
     --btnBd-color: var(--coreBd-color);
-    --btnBd-rad: 2.5px;
+    --btnBd-rad: 5px;
     --btnW-max: 320px;
     --inpT: currentColor;
     --inpBg: var(--coreBg);
@@ -87,7 +78,7 @@
     --mainBg-gray: var(--coreBg-gray);
     --mainBd-line: 1px;
     --mainBd-color: var(--coreBd-color);
-    --mainBd-rad: 2.5px;
+    --mainBd-rad: 5px;
     /* var: foot */
     --fotT: currentColor;
     --fotBd-line: 1px;
@@ -126,6 +117,7 @@
     --snGold: #72621D;
     --snPurple: #803378;
     --snT: #191919;
+    --bs: #e8f0fe;
     --snBg: #F8F9FA;
     --snBd-line: 1px;
     --snBd-color: #323232;
@@ -149,6 +141,20 @@
     --copy: 'or copy link';
     --copyC: 'Copy to clipboard';
     --copied: 'Copied!';
+}
+
+@media (prefers-color-scheme: dark) {
+    .nB {
+        --coreT-prim: #F8F9FA;
+        --coreT-dim: #D2D3D7;
+        --coreLink: #6001FF;
+        --coreBg: #202124;
+        --coreBg-dim: #2D3138;
+        --coreBg-gray: #161C24;
+        --coreBg-pop: ;
+        --coreBd-color: #35393f;
+        --bs: #35393f;
+    }
 }
 
 /* font: Noto Sans(latin) */
@@ -592,7 +598,6 @@ details:is(.sp, .ac) summary::-webkit-details-marker {
 .cInherit.u a:hover {
     text-decoration: underline
 }
-
 .noFilter a:hover {
     filter: none
 }
@@ -1576,17 +1581,21 @@ details:is(.sp, .ac) summary::-webkit-details-marker {
     inset-inline-start: 50%;
     transform: translate(-50%, -50%)
 }
-.slgs{
+
+.slgs {
     font-size: calc(var(--h1) + 3px);
     font-family: var(--font);
     font-weight: bold;
 }
-.slgs span{
+
+.slgs span {
     color: var(--btnBg);
 }
-.hdsr{
+
+.hdsr {
     padding: 0 10px;
 }
+
 .pg .im span,
 .dg .i span {
     position: absolute;
@@ -3032,13 +3041,15 @@ pre i.green {
         align-self: baseline
     }
 }
-.menuLabelSvg{
-    display:none !important;
+
+.menuLabelSvg {
+    display: none !important;
 }
+
 @media screen and (max-width:640px) {
 
-    .menuLabelSvg{
-        display:block !important;
+    .menuLabelSvg {
+        display: block !important;
     }
 
     /* var */
