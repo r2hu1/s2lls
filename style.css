@@ -38,7 +38,7 @@
     --darkBd-color: #35393f;
     /* var: basic */
     --selT: var(--coreT-prim);
-    --selBg: var(--coreLink);
+    --selBg: var(--btnBg);
     --placeH: var(--coreT-dim);
     --btnT: #FFFDFC;
     --btnBg: #3740FF;
@@ -598,6 +598,7 @@ details:is(.sp, .ac) summary::-webkit-details-marker {
 .cInherit.u a:hover {
     text-decoration: underline
 }
+
 .noFilter a:hover {
     filter: none
 }
