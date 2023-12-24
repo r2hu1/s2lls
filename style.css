@@ -37,8 +37,8 @@
     --darkBg-pop: ;
     --darkBd-color: #35393f;
     /* var: basic */
-    --selT: currentColor;
-    --selBg: #D2D3D7;
+    --selT: var(--coreT-prim);
+    --selBg: var(--coreLink);
     --placeH: var(--coreT-dim);
     --btnT: #FFFDFC;
     --btnBg: #3740FF;
@@ -150,7 +150,7 @@
         --coreLink: #6001FF;
         --coreBg: #202124;
         --coreBg-dim: #2D3138;
-        --coreBg-gray: #161C24;
+        --coreBg-gray: #2D3138;
         --coreBg-pop: ;
         --coreBd-color: #35393f;
         --bs: #35393f;
@@ -1589,7 +1589,7 @@ details:is(.sp, .ac) summary::-webkit-details-marker {
 }
 
 .slgs span {
-    color: var(--btnBg);
+    color: var(--coreLink);
 }
 
 .hdsr {
