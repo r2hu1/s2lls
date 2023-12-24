@@ -1612,7 +1612,9 @@ details:is(.sp, .ac) summary::-webkit-details-marker {
     font-size: var(--posTi-fontMax);
     line-height: 1.3
 }
-
+.mt0{
+    margin-top: -5px;
+}
 .pt .name.i {
     font-weight: var(--posT-fontW);
     font-size: var(--posT-fontMax);
@@ -1734,6 +1736,32 @@ figcaption {
     font-size: small;
     transition: var(--tShow);
     backdrop-filter: saturate(180%) blur(10px)
+}
+
+.Image>div>span {
+    position: absolute;
+    top: 33px;
+    right: 33px;
+    z-index: 1;
+}
+
+.Image>div>span>span {
+    padding: 8px 10px;
+    border-radius: var(--mainBd-rad);
+    background: var(--coreBg-dim);
+    color: var(--coreT-prim);
+}
+.Image>div>a>img{
+    border-radius: var(--mainBd-rad);
+    min-height: 220px;
+    max-height: 220px;
+    width: 100%;
+}
+.Image>div{
+    height: fit-content;
+}
+.Image {
+    position: relative;
 }
 
 .hdImg .shImg {
