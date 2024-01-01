@@ -3291,7 +3291,7 @@ pre i.green {
     z-index: 10;
     position: fixed;
     bottom: 15px;
-    right: 25px;
+    right: 20px;
     background: #8775f5;
     height: 40px;
     width: 40px;
@@ -3316,7 +3316,7 @@ pre i.green {
 }
 @keyframes showB {
     to {
-        bottom: 25px;
+        bottom: 20px;
         opacity: 1;
         visibility: visible;
     }
