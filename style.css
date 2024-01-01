@@ -3293,9 +3293,9 @@ pre i.green {
     bottom: 0px;
     right: 20px;
     background: #8775f5;
-    height: 40px;
-    width: 40px;
-    border-radius: var(--mainBd-rad);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
     border: 1px solid var(--snBd-color);
     cursor: pointer;
     opacity: 0;
@@ -3323,8 +3323,3 @@ pre i.green {
         visibility: visible;
     }
 }
-
-/*.backtotop:hover {
-    box-shadow: 4px 4px 0px var(--snBd-color);
-    transform: translate(-4px, -4px);
-}*/
