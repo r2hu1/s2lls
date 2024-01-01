@@ -3290,7 +3290,7 @@ pre i.green {
     justify-content: center;
     z-index: 10;
     position: fixed;
-    bottom: 15px;
+    bottom: 0px;
     right: 20px;
     background: #8775f5;
     height: 40px;
@@ -3298,6 +3298,8 @@ pre i.green {
     border-radius: var(--mainBd-rad);
     border: 1px solid var(--snBd-color);
     cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
     transition: transform .2s ease, opacity .2s, box-shadow .2s ease;
     animation: showB .3s forwards;
 }
@@ -3309,7 +3311,7 @@ pre i.green {
 
 @keyframes hideB {
     to {
-        bottom: 10px;
+        bottom: 0px;
         opacity: 0;
         visibility: hidden;
     }
@@ -3322,7 +3324,7 @@ pre i.green {
     }
 }
 
-.backtotop:hover {
+/*.backtotop:hover {
     box-shadow: 4px 4px 0px var(--snBd-color);
     transform: translate(-4px, -4px);
-}
+}*/
