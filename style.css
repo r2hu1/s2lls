@@ -3283,3 +3283,46 @@ pre i.green {
 
 /* opt: do not copy */
 /*body{user-select:none;-moz-user-select:none;-ms-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-webkit-touch-callout:none} pre, code, kbd, i[rel=pre]{user-select:text;-moz-user-select:text;-ms-user-select:text;-khtml-user-select:text;-webkit-user-select:text;-webkit-touch-callout:text}*/
+
+.backtotop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: fixed;
+    bottom: 15px;
+    right: 25px;
+    background: #8775f5;
+    height: 40px;
+    width: 40px;
+    border-radius: var(--mainBd-rad);
+    border: 1px solid var(--snBd-color);
+    cursor: pointer;
+    transition: transform .2s ease, opacity .2s, box-shadow .2s ease;
+    animation: showB .3s forwards;
+}
+
+.backtotop-hidden {
+    transition: opacity .2s;
+    animation: hideB .3s forwards;
+}
+
+@keyframes hideB {
+    to {
+        bottom: 10px;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+@keyframes showB {
+    to {
+        bottom: 25px;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.backtotop:hover {
+    box-shadow: 4px 4px 0px var(--snBd-color);
+    transform: translate(-4px, -4px);
+}
