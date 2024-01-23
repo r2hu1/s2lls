@@ -96,7 +96,7 @@
     /* According to aspect-ratio 16:9 (9 / 16 = 0.5625) */
     /* var: typo */
     --break: 3em;
-    --img-rad: 2.5px;
+    --img-rad: 5px;
     --lineHeight: 1.65;
     --lineSpacing: 1.8em;
     --tableBg: rgb(246 246 246 / 80%);
@@ -147,9 +147,9 @@
     .nB {
         --coreT-prim: #F8F9FA;
         --coreT-dim: #D2D3D7;
-        --coreLink: #6001FF;
-        --coreBg: #202124;
-        --coreBg-dim: #2D3138;
+        --coreLink: #3740FF;
+        --coreBg: #111;
+        --coreBg-dim: #1a1c20;
         --coreBg-gray: #2D3138;
         --coreBg-pop: ;
         --coreBd-color: #35393f;
@@ -1278,7 +1278,7 @@ details:is(.sp, .ac) summary::-webkit-details-marker {
 }
 
 .maLT .ac .l {
-    --b: #8775f5;
+    --b: #6001FF;
     gap: 20px
 }
 
@@ -3017,6 +3017,13 @@ pre i.green {
 .log .ms::before {
     content: var(--misc)
 }
+.Image a{
+    border-radius: var(--img-rad);
+}
+.Image a>span {
+    border-radius: var(--img-rad);
+    overflow: hidden;
+}
 
 /* type: responsive */
 @media screen and (max-width:896px) {
@@ -3292,7 +3299,7 @@ pre i.green {
     position: fixed;
     bottom: 0px;
     right: 20px;
-    background: #8775f5;
+    background: var(--coreLink);
     height: 45px;
     width: 45px;
     border-radius: 50%;
@@ -3316,6 +3323,7 @@ pre i.green {
         visibility: hidden;
     }
 }
+
 @keyframes showB {
     to {
         bottom: 20px;
